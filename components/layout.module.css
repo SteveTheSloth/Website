@@ -1,0 +1,96 @@
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100vw;
+  background: linear-gradient(135deg, #280e3b 0%, #ca3782 100%);
+  margin: 0px;
+  padding: 0px;
+  z-index: 101;
+}
+
+.footer {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 101;
+}
+
+.bottombar {
+  position: fixed;
+  bottom: 0px;
+  height: 80px;
+  width: 100vw;
+  background: linear-gradient(135deg, #280e3b 0%, #ca3782 100%);
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.contact {
+  color: white;
+  justify-self: left;
+  margin-left: 25px;
+}
+
+.copyright {
+  color: white;
+  justify-self: right;
+  margin-right: 25px;
+}
+
+.logoDiv {
+  display: grid;
+  width: 100vw;
+  height: 350px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.mainParagraph {
+  width: 75vw;
+  height: auto;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.subParagraph {
+  width: 75vw;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.codeImage {
+  border: 2px solid black;
+  margin-top: 10px;
+  width: 60vw;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
