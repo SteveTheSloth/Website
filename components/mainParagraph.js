@@ -11,7 +11,7 @@ export default function MainParagraph(props) {
     <div className={styles.mainParagraph}>
       <h3 className={utilStyles.mainParagraphHeading}>{props.heading}</h3>
       {props.link ? (
-        <a href={props.link}>
+        <a href={props.link} target="_blank">
           <Image
             priority
             src="/images/GitHub_Logo.png"
