@@ -10,7 +10,7 @@ export default function MainParagraph(props) {
   return (
     <div className={styles.mainParagraph}>
       <h3 className={utilStyles.mainParagraphHeading}>{props.heading}</h3>
-      {props.links ? (
+      {props.link ? (
         <a href={props.link}>
           <Image
             priority
