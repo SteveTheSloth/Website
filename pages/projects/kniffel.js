@@ -25,7 +25,7 @@ export default function Kniffel() {
             a digital multiplayer copy of its analogue original has been a continuously developing project
             since the start of my coding journey. It was the first programme I ever coded on my own and has since
             been updated and rewritten many times as my skills and interests developed. My love for this game
-            stems from playing it over and over with a group of friends back in Berlin. We used to play it so
+            stems from playing it with a group of friends in Berlin. We used to play it so
             much that we developed an ongoing league system and an almost unlimited pool of inside jokes around
             it. The development of my versions of Kniffel (which is almost the same as the more popular Yahtzee)
             started from what you might call a prime example of 'Spaghetti-Code' - a completely functional version,
@@ -41,7 +41,7 @@ export default function Kniffel() {
             first version of the game. I had not yet learned about Object Oriented Programming and therefore used multiple 
             functions to represent the game. While by no means ideal, I managed to code a fully functional version of Kniffel
             that works with user input and text-representations of dice values and game states within a few weeks of learning how to code.
-            It is safe to say that I was as proud of my achievement then, as I am now aware of how overly simplistic and suboptimal
+            I was as proud of my achievement then, as I am now aware of how overly simplistic and suboptimal
             this version was."
       />
       <Image
@@ -69,12 +69,11 @@ export default function Kniffel() {
         alt="Kniffel Classes"
       />
       <SubParagraph
-        heading="A fully interactive GUI with pygame"
-        text="I decided to take a break from developing the game any further for a little while and continued my studies. The book I was working through at the time
+        heading="A fully interactive Graphical User Interface (GUI) with pygame"
+        text="I decided to take a break from developing the game any further for a while and continued my studies. The book I was working through at the time
             included an exercise on the Python library pygame. After finishing said exercise, I decided to give Kniffel another go. 
-            This approach amounted to a much bigger project than the previous ones, as it was my first time creating a Graphical User Interface as well as my first 
-            time working within the framework of a library. I applied my knowledge of 
-            OOP to create a set of modules containing the classes for individual game mechanics and used the pygame documentation as well as information
+            This approach amounted to a much bigger project than the previous ones, as it was my first time creating a GUI as well as working within the framework of a library. I applied my knowledge of 
+            OOP to create a set of modules containing the classes for individual game mechanics. I also used the pygame documentation as well as information
             from examples and exercises in the book to create what I would call my first fully functional and interactive multiplayer Kniffel game.
             This version contains different screens for setup, game, and final scores, intuitive clickable items replacing the more abstract keyboard inputs, and even dice rolling
             animations."
@@ -89,13 +88,12 @@ export default function Kniffel() {
       />
       <SubParagraph
         heading="Model View Controller and a new GUI with PyQt"
-        text="While I personally had been very pleased with how my
-            pygame implementation had turned out, a good friend of mine who is a seasoned programmer himself, told me to look into
+        text="I was advised by a friend, who also works in the field of programming, to look into
             the Model View Controller paradigm and rearrange the game code accordingly. This would make it much easier to implement a different 
             GUI later on. His advice for creating a different GUI was to use the PyQt library.
-            I followed his advice and rearranged the game according to MVC and created a new GUI. As i did not intend to make PyQt a central part of my studies, I did not
+            I rearranged the game according to MVC and created a new GUI. As I did not intend to make PyQt a central part of my studies, I did not
             spend a lot of time on the GUI and instead implemented new functionality including creating custom lists, saving, and loading games. Developing this version was a great 
-            learning opportunity, familiarising me with the MVC paradigm, the PyQt library, and designing a Graphical User Interface. "
+            learning opportunity, familiarising myself with the MVC paradigm, the PyQt library, and designing a Graphical User Interface. "
       />
       <Image
         priority
@@ -107,11 +105,11 @@ export default function Kniffel() {
       />
       <SubParagraph
         heading="First steps in Reinforcement Learning with Kniffel"
-        text="With this version completed, I decided to not persue the multiplayer
+        text="With this version completed, I decided to not pursue the multiplayer
             implementation of the game any further. It had fulfilled its purpose as a programming practice and I was very happy with what I had managed to build and the skills and knowledge I acquired in the process. 
             At this point I found myself being very intrigued by the current 
             developments in the field of Artificial Intelligence. I wondered if it would be possible to use my game - for which I had previously already created 
-            a hard-coded computer controlled player that performed decently - to learn about AI and create a model that would perform as well or even 
+            a hard-coded computer controlled player - to learn about AI and create a model that would perform as well or even 
             better as a human player. I started reading up on the different kinds of AI and quickly realised that I would need to implement a Reinforcement
             Learning algorithm to achieve this. I decided to use the stable baseline library design and train a model. While I did not achieve fully satisfying results 
             this was a very interesting excursion into the world of AI and a great learning opportunity."
@@ -129,7 +127,7 @@ export default function Kniffel() {
         text="I had not touched the code for any of the prior versions 
             in a long time when I decided to include the stages of its development in my portfolio on this website. I envisioned this to be an interactive element that people could
             engage with and try for themselves as opposed to solely reading about it. It turned out that I had to rewrite the entire code and could use only tiny snippets of the previous versions. 
-            I was able to build on my previous experiences designing the game logic and used this as another exercise on react hooks and JavaScript."
+            I was able to build on my previous experiences designing the game logic and used this as another exercise on React hooks and JavaScript."
       />
       <Image
         priority

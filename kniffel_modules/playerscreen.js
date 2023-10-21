@@ -148,7 +148,7 @@ export default function PlayerScreen(props) {
         text="Top section: only multiples of the given number are added up. Get at least 63 points (equal to 3 of each dice value) to receive a bonus of 35 points."
       />
       <SubParagraph text="Three of a Kind and Four of a Kind: roll includes at least 3/4 dice of the same value. Entire roll is added up." />
-      <SubParagraph text="Full House: roll includes 3 dice of the same value and 2 dice of the same value. 5 identical values count as a Full House." />
+      <SubParagraph text="Full House: roll includes 3 dice of the same value and 2 dice of the same value. 5 identical values can also count as a Full House." />
       <SubParagraph text="Small Street and Big Street: roll contains 4/5 consecutive values." />
       <SubParagraph text="Kniffel: 5 dice of the same value" />
       <SubParagraph text="Chance: entire roll is added up without restrictions." />

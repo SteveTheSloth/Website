@@ -23,16 +23,16 @@ export default function Budget() {
             After having lived together for a few months and sharing bills, we started to find it more and more difficult to keep track of our transaction. 
             This became even more confusing as payment schedules weren't all the same. Some bills were
             due monthly, some every four weeks on varying dates, some were only one time payments. We sat together one night to discuss this issue when I came up with the idea to
-            use this as a web development exercise and build a web application to help us organise our finances better. I decided use Django as a framework, as I had previously completed 
-            a bootcamp introducing flask and Django, of which I favoured the latter due to its superior structure and integration of database functionality. 
-            I tried my very best to give it a tiny bit of styling with the limited knowledge of CSS and Html I had at the time."
+            use this as a web development exercise and build a web application to help us organise our finances better. I decided to use Django as a framework, as I had previously completed 
+            a bootcamp introducing Flask and Django, of which I favoured the latter due to its superior structure and integration of database functionality. 
+            I tried to give it some styling with the limited knowledge of CSS and HTML I had at the time."
       />
 
       <SubParagraph
         heading="User Authentication"
         text="I had initially envisioned the app as a tool to help my partner and me specifically but while creating it, I wanted
-            to open up the possibility of other people using it as well. This meant for the app to include user registration and authentication. Users 
-            needed to be able to create groups for shared budgets like ours. This opened up the application to broader use cases, for example small sports teams, project
+            to include the possibility of other people using it as well. Users needed to be able to create groups for shared budgets like ours. This required implementing user registration and authentication
+            and would enable the application to be used by, for example, small sports teams, project
             stakeholders, small business owners, flat shares etc."
       />
       <Image
@@ -57,7 +57,7 @@ export default function Budget() {
         text="The core function of any individual or shared budget is the form for adding additional transactions. I included
             three types of transactions: expenses, incomes, and loans. Each of these can be one-off or recurring transactions with a variety of pre-defined repeat patterns for recurring ones 
             (weekly, every 2/3/4 weeks, monthly). Transactions are required to include a name, purpose, amount, due date, and repeat pattern. They may also include information about a website, telephone
-            number, and an end date on which the transaction will automatically be removed from the balance overviews."
+            number, and an end date upon which the transaction will automatically be removed from the balance overviews."
       />
       <Image
         priority
@@ -85,9 +85,11 @@ export default function Budget() {
       <SubParagraph
         heading="Group functionality"
         text="I implemented the group functionality using a relational database storing 
-            groups IDs and user IDs. Groups are password secured, so in order to join an existing group a user needs the group's name and password. Users can be part of multiple groups at the same time and switch between individual and group budgets easily. 
+            groups IDs and user IDs. Groups are password secured, so in order to join an existing group a user needs the group's name and password. Users can be part of multiple groups at the same time and switch between individual 
+            and group budgets easily. 
             After switching to the group's budget, the entire functionality
-            of the application is based on the group's transactions rather than individual ones. Transactions added to a group will be stored with the group's ID as well as the user's ID, storing data on which user added which group transaction."
+            of the application is based on the group's transactions rather than individual ones. Transactions added to a group will be stored with the group's ID as well as the user's ID, storing data on which user added which 
+            group transaction."
       />
       <Image
         priority
