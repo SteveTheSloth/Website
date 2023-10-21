@@ -616,6 +616,7 @@
   .scoreGrid {
     justify-self: center;
     column-gap: 0px;
+    margin-left: 0;
   }
 
   .otherScoresheet {
@@ -638,6 +639,8 @@
 
   .scoreOptionGrid {
     column-gap: 0px;
+    width: 90%;
+    font-size: small;
   }
 }
 
