@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
       <div className={styles.logoDiv}>
         <Image
-          priority
           src="/images/logo_default.png"
           className={utilStyles.logoMain}
           height={114}

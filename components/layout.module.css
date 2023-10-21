@@ -61,10 +61,14 @@
 
 .logoDiv {
   display: flex;
-  width: 100vw;
-  height: 350px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 100px;
+  align-self: center;
+  justify-self: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  z-index: 100;
 }
 
 .mainParagraph {
