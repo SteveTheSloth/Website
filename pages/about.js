@@ -90,7 +90,7 @@ export default function About() {
           />
           <Image
             priority
-            src="/images/mushroom.jpg"
+            src="/images/real_mushroom.jpg"
             className={utilStyles.imageLink}
             height={200}
             width={300}
@@ -98,7 +98,7 @@ export default function About() {
           />
           <Image
             priority
-            src="/images/whittling.jpg"
+            src="/images/whittling_spoon.jpg"
             className={utilStyles.imageLink}
             height={200}
             width={300}
