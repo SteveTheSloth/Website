@@ -458,9 +458,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  margin-top: 75px;
+  margin-top: 72px;
   width: 150px;
   transition: 0.5s linear;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 105;
 }
 
 .hideNavMenu {
@@ -469,16 +472,18 @@
   visibility: hidden;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  margin-top: 75px;
+  margin-top: 72px;
   width: 0px;
   height: 0px;
-  opacity: 0;
+  background-color: white;
+  z-index: 105;
   transition: 0.5s linear;
 }
 
 .hideNavMenu .navItem {
   margin-left: -250px;
   transition: 0.5s linear;
+  /* background-color: white; */
   z-index: 105;
 }
 
@@ -492,11 +497,12 @@
   padding-bottom: 7px;
   padding-top: 7px;
   color: black;
-  background-color: white;
-  opacity: 0.9;
+  /* background-color: white; */
+  /* opacity: 0.9; */
   font-size: large;
   font-weight: 600;
   text-decoration: none;
+  position: static;
 }
 
 .contact {
