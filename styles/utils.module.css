@@ -672,12 +672,12 @@
 
 @media screen and (max-width: 530px) {
   .dice {
-    height: auto;
+    height: 25vw;
     width: 25vw;
   }
 
   .keptDice {
-    height: auto;
-    width: max-content;
+    height: 25vw;
+    width: 25vw;
   }
 }
