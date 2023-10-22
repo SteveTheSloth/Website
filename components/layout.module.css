@@ -22,7 +22,7 @@
   background: linear-gradient(135deg, #280e3b 0%, #ca3782 100%);
   margin: 0px;
   padding: 0px;
-  z-index: 101;
+  z-index: 102;
 }
 
 .footer {
@@ -45,6 +45,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
+  z-index: 102;
 }
 
 .contact {

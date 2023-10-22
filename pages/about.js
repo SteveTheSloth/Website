@@ -74,34 +74,34 @@ export default function About() {
         <section className={utilStyles.linkGrid}>
           <Image
             priority
+            className={utilStyles.aboutImage}
             src="/images/music.jpg"
-            className={utilStyles.imageLink}
-            height={200}
-            width={300}
+            height={180}
+            width={270}
             alt="Music"
           />
           <Image
             priority
+            className={utilStyles.aboutImage}
             src="/images/cooking.jpg"
-            className={utilStyles.imageLink}
-            height={200}
-            width={300}
+            height={180}
+            width={270}
             alt="Food"
           />
           <Image
             priority
+            className={utilStyles.aboutImage}
             src="/images/real_mushroom.jpg"
-            className={utilStyles.imageLink}
-            height={200}
-            width={300}
+            height={180}
+            width={270}
             alt="Mushroom"
           />
           <Image
             priority
+            className={utilStyles.aboutImage}
             src="/images/whittling_spoon.jpg"
-            className={utilStyles.imageLink}
-            height={200}
-            width={300}
+            height={180}
+            width={270}
             alt="Spoon"
           />
         </section>
