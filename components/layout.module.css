@@ -93,6 +93,7 @@
 .codeImage {
   border: 2px solid black;
   margin-top: 10px;
+  margin-bottom: 50px;
   width: 60vw;
   height: auto;
   display: flex;

@@ -253,10 +253,29 @@ export default function Game() {
       }
     }
     setRollCount(rollCount + 1);
+    move();
     setDice(newvalues);
     setIsCross(false);
     setTakeText("Take");
     setOptions(scoreOptions(Object.values(newvalues), scoresheet));
+  }
+
+  function move() {
+    const dice = document.querySelectorAll(".utils_dice__wcY4g");
+
+    dice.forEach((die) => (die.className = utilStyles.dice));
+    requestAnimationFrame((time) => {
+      requestAnimationFrame((time) => {
+        dice.forEach(
+          (die) => (die.className = utilStyles.dice + " " + utilStyles.rollDice)
+        );
+      });
+    });
+  }
+
+  function resetClassName() {
+    const dice = document.querySelectorAll(".utils_rollDice__vYupq");
+    dice.forEach((die) => (die.className = utilStyles.dice));
   }
 
   /**

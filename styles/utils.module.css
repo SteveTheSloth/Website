@@ -248,6 +248,50 @@
   justify-self: center;
 }
 
+.diceImg {
+  height: max-content;
+  width: 150px;
+  align-self: center;
+  justify-self: center;
+}
+
+.rollDice {
+  animation: rotation 0.2s linear;
+}
+
+@keyframes rotation {
+  11% {
+    transform: rotate(5deg);
+  }
+  22% {
+    transform: rotate(-5deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  44% {
+    transform: rotate(5deg);
+  }
+  55% {
+    transform: rotate(-5deg);
+  }
+  66% {
+    transform: rotate(5deg);
+  }
+  77% {
+    transform: rotate(-15deg);
+  }
+  88% {
+    transform: rotate(5deg);
+  }
+  99% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .keptDice {
   height: 150px;
   width: max-content;

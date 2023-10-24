@@ -13,11 +13,17 @@ export default function DiceGrid(props) {
         <div
           key={"d_" + index}
           className={
-            isKept.includes(index) ? utilStyles.keptDice : utilStyles.dice
+            isKept.includes(index)
+              ? utilStyles.keptDice
+              : utilStyles.dice + " " + utilStyles.rollDice
           }
           onClick={() => func(index)}
         >
-          <Dice value={val} key={"d_" + index} />
+          <Dice
+            value={val}
+            key={"d_" + index}
+            // rolled={!isKept.includes(index)}
+          />
         </div>
       ))}
     </div>

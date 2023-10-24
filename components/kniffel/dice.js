@@ -13,7 +13,7 @@ export default function Dice(props) {
     <Image
       priority
       src={imagePath}
-      className={utilStyles.dice}
+      className={utilStyles.diceImg}
       height={150}
       width={150}
       alt={name}
