@@ -18,7 +18,7 @@ export default function Projects() {
       <secion className={utilStyles.portfolioLinkGrid}>
         <ImageLink
           link="projects/website"
-          imgFileName="page.jpg"
+          imgFileName="Inverted_Logo.jpg"
           text="Personal Website"
         />
         <ImageLink
@@ -28,12 +28,12 @@ export default function Projects() {
         />
         <ImageLink
           link="projects/budget"
-          imgFileName="budget.jpg"
+          imgFileName="Budget_Image.jpg"
           text="Budget Planner"
         />
         <ImageLink
           link="projects/transfers"
-          imgFileName="football.jpg"
+          imgFileName="Football_Image.jpg"
           text="Bundesliga Transfer Analysis"
         />
       </secion>
