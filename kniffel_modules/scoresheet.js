@@ -1,10 +1,11 @@
 import utilStyles from "../styles/utils.module.css";
 
 /**
- * Display Scoresheet element. Convert original keys to more readable field names.
+ * Display Scoresheet element. Convert original keys to more readable field names. Change scorefield classes according to endscreen and value.
  */
 export default function Scoresheet(props) {
   const scoresheet = props.scoresheet;
+  const endsheet = props.endsheet;
 
   var displaysheet = Object.keys(scoresheet).reduce(
     (sheet, key) => ({
@@ -33,16 +34,44 @@ export default function Scoresheet(props) {
     {}
   );
 
+  function lowerFirstLetter(string) {
+    var words = string.split(" ");
+    words = words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+    words[0] = words[0].toLowerCase();
+
+    return "".concat(...words);
+  }
+
   return (
     <>
       <div className={props.className ?? utilStyles.scoreGrid}>
         {Object.entries(displaysheet).map(([fieldName, value]) => (
           <>
-            <li className={utilStyles.scoreField} key={"score_" + fieldName}>
+            <li
+              className={
+                endsheet
+                  ? utilStyles.scoreField
+                  : value === null
+                  ? utilStyles.scoreField
+                  : utilStyles.greyScoreField
+              }
+              key={"score_" + fieldName}
+              id={"score_" + lowerFirstLetter(fieldName)}
+            >
               {" "}
               {fieldName}
             </li>
-            <li className={utilStyles.valueField} key={"scoreVal_" + fieldName}>
+            <li
+              className={
+                endsheet
+                  ? utilStyles.scoreField
+                  : value === null
+                  ? utilStyles.scoreField
+                  : utilStyles.greyScoreField
+              }
+              key={"scoreVal_" + fieldName}
+              id={"score_Val_" + lowerFirstLetter(fieldName)}
+            >
               {" "}
               {value ?? "open"}
             </li>

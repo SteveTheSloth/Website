@@ -56,7 +56,7 @@ export default function Endscreen(props) {
               </svg>
             </h2>
 
-            <Scoresheet scoresheet={player[2]} />
+            <Scoresheet scoresheet={player[2]} endsheet={true} />
           </>
         ))}
 
@@ -68,6 +68,7 @@ export default function Endscreen(props) {
             <Scoresheet
               scoresheet={player[2]}
               className={utilstyles.otherScoresheet}
+              endsheet={true}
             />
           </>
         ))}

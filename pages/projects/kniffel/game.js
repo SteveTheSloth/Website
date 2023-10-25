@@ -254,14 +254,19 @@ export default function Game() {
         }
       }
     }
+
     setRollCount(rollCount + 1);
     move();
     setDice(newvalues);
     setIsCross(false);
     setTakeText("Take");
     setOptions(scoreOptions(Object.values(newvalues), scoresheet));
+    setFieldClasses(false, newvalues);
   }
 
+  /**
+   * Change ClassName of all dice to .dice .rollDice to connect with CSS rolling animation.
+   */
   function move() {
     const dice = document.querySelectorAll(".utils_dice__wcY4g");
 
@@ -273,11 +278,6 @@ export default function Game() {
         );
       });
     });
-  }
-
-  function resetClassName() {
-    const dice = document.querySelectorAll(".utils_rollDice__vYupq");
-    dice.forEach((die) => (die.className = utilStyles.dice));
   }
 
   /**
@@ -294,7 +294,7 @@ export default function Game() {
   }
 
   /**
-   * Get open fields in the active scoresheet and set the options state to represent open fields with the value X to cross off.
+   * Get open fields in the active scoresheet and set the options state to represent open fields with the value X to cross off, set field Classes according to cross or take state.
    */
   function crossOptions() {
     const val = isCross;
@@ -307,9 +307,11 @@ export default function Game() {
       });
 
       setOptions(opn);
+      setFieldClasses(true, null);
     } else {
       setTakeText("Take");
       setOptions(scoreOptions(Object.values(dice), scoresheet));
+      setFieldClasses(false, dice);
     }
   }
 
@@ -371,6 +373,44 @@ export default function Game() {
       setIsKept([]);
       setOptions([]);
       setScoresheet(sheets[activePlayer]);
+      resetFieldClasses();
+    }
+  }
+
+  /**
+   * Set the classes of scorefields according to cross state to highlight in different colours.
+   */
+  function setFieldClasses(cross, roll) {
+    resetFieldClasses();
+    cross
+      ? openFields(scoresheet).forEach((option) => {
+          document.getElementById("score_Val_" + option[0]).className =
+            utilStyles.redScoreField;
+          document.getElementById("score_" + option[0]).className =
+            utilStyles.redScoreField;
+        })
+      : scoreOptions(Object.values(roll), scoresheet).forEach((option) => {
+          document.getElementById("score_Val_" + option[0]).className =
+            utilStyles.tealScoreField;
+          document.getElementById("score_" + option[0]).className =
+            utilStyles.tealScoreField;
+        });
+  }
+
+  /**
+   * Reset the classes of scorefields that had previously been highlighted.
+   */
+  function resetFieldClasses() {
+    const tealFields = document.querySelectorAll(
+      ".utils_tealScoreField__VN7o4"
+    );
+    for (let i = 0; i < tealFields.length; i++) {
+      tealFields[i].className = utilStyles.scoreField;
+    }
+
+    const redFields = document.querySelectorAll(".utils_redScoreField__qjd3Z");
+    for (let i = 0; i < redFields.length; i++) {
+      redFields[i].className = utilStyles.scoreField;
     }
   }
 

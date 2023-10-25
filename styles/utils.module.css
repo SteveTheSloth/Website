@@ -321,6 +321,27 @@
   justify-self: start;
 }
 
+.greyScoreField {
+  width: max-content;
+  list-style-type: none;
+  justify-self: start;
+  color: lightgray;
+}
+
+.tealScoreField {
+  width: max-content;
+  list-style-type: none;
+  justify-self: start;
+  color: lightseagreen;
+}
+
+.redScoreField {
+  width: max-content;
+  list-style-type: none;
+  justify-self: start;
+  color: red;
+}
+
 .valueField {
   display: grid;
   list-style-type: none;
