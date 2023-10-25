@@ -92,7 +92,9 @@ export default function Game() {
     }
 
     if (fieldNames.includes("chance")) {
-      scoreOptions.push(["chance", chanceScore(roll)]);
+      chanceScore(roll) > 0
+        ? scoreOptions.push(["chance", chanceScore(roll)])
+        : null;
     }
 
     scoreOptions = scoreOptions.filter((scoreOption) => scoreOption[1] != null);
