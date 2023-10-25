@@ -3,27 +3,20 @@ import utilStyles from "../styles/utils.module.css";
 import Dice from "../components/kniffel/dice";
 
 /**
- * Display DiceGrid element. Take dice values, indices of kept dice and function to add/remove individual die index from kept indices. Display each dice value as Dice element and change class name according to kept indices.
+ * Display DiceGrid element. Take dice values and function to add/remove individual die index from kept indices on click. Display each dice value as Dice element.
  */
 export default function DiceGrid(props) {
-  const { dice, isKept, func } = props;
+  const { dice, func } = props;
   return (
     <div className={utilStyles.diceGrid}>
       {Object.values(dice).map((val, index) => (
         <div
+          id={"dice_" + index}
           key={"d_" + index}
-          className={
-            isKept.includes(index)
-              ? utilStyles.keptDice
-              : utilStyles.dice + " " + utilStyles.rollDice
-          }
+          className={utilStyles.dice + " " + utilStyles.rollDice}
           onClick={() => func(index)}
         >
-          <Dice
-            value={val}
-            key={"d_" + index}
-            // rolled={!isKept.includes(index)}
-          />
+          <Dice value={val} key={"d_" + index} />
         </div>
       ))}
     </div>

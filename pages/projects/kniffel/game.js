@@ -279,13 +279,15 @@ export default function Game() {
   }
 
   /**
-   * Take index of a die and add or remove that index from the isKept state.
+   * Take index of a die and add or remove that index from the isKept state. Change className for dice element to represent its state.
    */
   function keep(index) {
     if (isKept.includes(index)) {
       setIsKept(isKept.filter((die) => die != index));
+      document.getElementById("dice_" + index).className = utilStyles.dice;
     } else {
       setIsKept([...isKept, index]);
+      document.getElementById("dice_" + index).className = utilStyles.keptDice;
     }
   }
 
@@ -435,7 +437,7 @@ export default function Game() {
       {isRunning ? (
         <>
           <Players players={players} activePlayerIndex={activePlayerIndex} />
-          <DiceGrid dice={dice} isKept={isKept} func={keep} />
+          <DiceGrid dice={dice} func={keep} />
           <div className={utilStyles.buttons}>
             <button onClick={roll} className={utilStyles.button}>
               Roll
