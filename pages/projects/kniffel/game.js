@@ -440,7 +440,7 @@ export default function Game() {
           <DiceGrid dice={dice} func={keep} />
           <div className={utilStyles.buttons}>
             <button onClick={roll} className={utilStyles.button}>
-              Roll
+              Roll {rollCount > 0 ? rollCount : null}
             </button>
             <button onClick={crossOptions} className={utilStyles.button}>
               Show {isCross ? "Take" : "Cross"} Options
