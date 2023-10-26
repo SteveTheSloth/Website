@@ -21,7 +21,7 @@ export default function MainParagraph(props) {
           />
         </a>
       ) : null}
-      <p className={utilStyles.mainParagraphText}>{props.text}</p>
+      <p className={utilStyles.paragraphText}>{props.text}</p>
     </div>
   );
 }

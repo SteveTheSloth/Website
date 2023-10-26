@@ -234,7 +234,6 @@ export default function Game() {
     bottomvals.forEach((i) => {
       bottom += sheet[i] === "X" ? 0 : sheet[i];
     });
-    console.log(bottom);
     return bottom;
   }
 
@@ -334,7 +333,6 @@ export default function Game() {
     activeSheet["bonus"] = activeSheet["top"] >= 63 ? 35 : 0;
     activeSheet["total"] =
       activeSheet["top"] + totalBottom(activeSheet) + activeSheet["bonus"];
-    console.log(activeSheet["top"], activeSheet["total"], activeSheet["bonus"]);
     var newSheets = { ...sheets, [activePlayer]: activeSheet };
     setSheets(newSheets);
   }
@@ -430,7 +428,6 @@ export default function Game() {
   function replay() {
     var newSheet = {};
     Object.keys(scoresheet).forEach((fieldName) => {
-      console.log(fieldName);
       if (["bonus", "top", "total"].includes(fieldName)) {
         newSheet[fieldName] = 0;
       } else {

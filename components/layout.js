@@ -17,7 +17,6 @@ export default function Layout({ children, home }) {
 
   function hideMenu() {
     setShowMenu(!showMenu);
-    console.log(showMenu);
   }
 
   return (

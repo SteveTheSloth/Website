@@ -15,7 +15,7 @@ export default function Projects() {
         <title>Projects</title>
       </Head>
       <h1 className={utilStyles.portfolioHeading}>Personal Projects</h1>
-      <secion className={utilStyles.portfolioLinkGrid}>
+      <section className={utilStyles.portfolioLinkGrid}>
         <ImageLink
           link="projects/website"
           imgFileName="Inverted_Logo.jpg"
@@ -36,7 +36,7 @@ export default function Projects() {
           imgFileName="Football_Image.jpg"
           text="Bundesliga Transfer Analysis"
         />
-      </secion>
+      </section>
     </Layout>
   );
 }

@@ -8,7 +8,7 @@ export default function SubParagraph(props) {
   return (
     <div className={styles.subParagraph}>
       <h3 className={utilStyles.subParagraphHeading}>{props.heading}</h3>
-      <p className={utilStyles.subParagraphText}>{props.text}</p>
+      <p className={utilStyles.paragraphText}>{props.text}</p>
     </div>
   );
 }
