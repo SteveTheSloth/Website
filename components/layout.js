@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -21,14 +20,6 @@ export default function Layout({ children, home }) {
 
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <header className={styles.header}>
         <div className={styles.topbar}>
           <div className={utilStyles.topgrid}>
